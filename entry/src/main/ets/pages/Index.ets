@@ -5,6 +5,8 @@ struct Index {
     //根组件
     Column(){
 
+
+
     }
     .width('100%')
     .height('100%')
