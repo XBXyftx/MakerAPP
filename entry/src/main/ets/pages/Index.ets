@@ -5,7 +5,10 @@ struct Index {
     //根组件
     Column(){
 
-
+      Stack(){
+        
+      }
+      .width('100%')
 
     }
     .width('100%')
