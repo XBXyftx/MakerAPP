@@ -5,6 +5,7 @@ struct Index {
     //根组件
     Column(){
 
+      //卡片最外层
       Column(){//去掉这一层中间会产生异常白线
 
         //上半部分
@@ -68,7 +69,16 @@ struct Index {
         .borderRadius({bottomLeft:8,bottomRight:8})
 
 
+
       }
+      .borderRadius(8)
+      .width(300)
+      .shadow({
+        radius:80,
+        color:Color.Black,
+        offsetX:20,
+        offsetY:20
+      })
 
 
     }
