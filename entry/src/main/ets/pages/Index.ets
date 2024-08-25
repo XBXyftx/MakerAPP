@@ -6,7 +6,7 @@ struct Index {
     Column(){
 
       //卡片最外层
-      this.BilibiliCard()
+      this.BilibiliCard($rawfile('fengMian.png'),'513.3万','1.1万','11:33','特警vs100人“诈骗集团”，谁能获胜？影视飓风躲猫猫特别篇','飓多多StormCrew')
 
     }
     .width('100%')
@@ -16,12 +16,12 @@ struct Index {
   }
 
   @Builder
-  BilibiliCard() {
+  BilibiliCard(fengMianImg:Resource,boFangLiang:string,danMuLiang:string,shiChang:string,biaoTi:string,boZhu:string) {
     //卡片最外层
     Column() {
       //上半部分
       Stack({ alignContent: Alignment.Bottom }) {
-        Image($rawfile('fengMian.png'))
+        Image(fengMianImg)
           .width(300)
           .borderRadius({ topLeft: 8, topRight: 8 })
         Row() {
@@ -29,18 +29,18 @@ struct Index {
             .width(25)
             .fillColor(Color.White)
             .margin({ right: 5 })
-          Text('513.3万')
+          Text(boFangLiang)
             .fontWeight(700)
             .fontColor(Color.White)
             .margin({ right: 15 })
           Image($rawfile('danMuLiang.svg'))
             .width(25)
             .margin({ right: 5 })
-          Text('1.1万')
+          Text(danMuLiang)
             .fontWeight(700)
             .fontColor(Color.White)
           Blank() //填充空余空间
-          Text('11:33')
+          Text(shiChang)
             .fontWeight(700)
             .fontColor(Color.White)
         }
@@ -51,7 +51,7 @@ struct Index {
 
       //下半部分
       Column({ space: 15 }) {
-        Text('特警vs100人“诈骗集团”，谁能获胜？影视飓风躲猫猫特别篇')
+        Text(biaoTi)
           .width('100%')
           .maxLines(2)
           .textOverflow({ overflow: TextOverflow.Ellipsis })
