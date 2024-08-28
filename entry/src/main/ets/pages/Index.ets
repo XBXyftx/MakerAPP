@@ -2,27 +2,17 @@
 @Component
 struct Index {
   build() {
-    Column(){
-      //根组件
-      this.newLocalBuilder()
-    }
-
-
-  }
-
-  @Builder
-  newLocalBuilder() {
     //根组件
-    Column() {
+    Column(){
 
       //卡片最外层
-      this.BilibiliCard($rawfile('fengMian.png'), '513.3万', '1.1万', '11:33',
-        '特警vs100人“诈骗集团”，谁能获胜？影视飓风躲猫猫特别篇', '飓多多StormCrew')
+      this.BilibiliCard($rawfile('fengMian.png'),'513.3万','1.1万','11:33','特警vs100人“诈骗集团”，谁能获胜？影视飓风躲猫猫特别篇','飓多多StormCrew')
 
     }
     .width('100%')
     .height('100%')
     .justifyContent(FlexAlign.Center)
+
   }
 
   @Builder
