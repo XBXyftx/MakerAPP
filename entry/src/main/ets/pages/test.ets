@@ -74,10 +74,10 @@ struct Index2 {
       .borderRadius(8)
       .width(300)
       .shadow({
-        radius:80,
-        color:Color.Black,
-        offsetX:20,
-        offsetY:20
+        radius: 30,
+        color: Color.Black,
+        offsetX: 40,
+        offsetY: 40
       })
 
 
